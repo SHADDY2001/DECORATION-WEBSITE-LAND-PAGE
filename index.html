@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LANDING PAGE IMAGE SLIDER</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="left-col">
+			<a href="" class="logo">DE<span>CORATE</span></a>
+			<div class="content">
+				<h1>Decorate Your <span>Room</span></h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+					
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat lationo.
+					consequat lationo.
+				</p>
+				<button type="button" id="okbtn">Learn More</button>
+			</div>
+		</div>
+		<div class="right-col">
+			<div class="slider">
+				<img src="1.jpg" id="slide" alt="">
+
+			</div>
+
+			<div class="slider-content">
+				<h2>LOOK AT AMAZING STYLES WE OFFER.</h2>
+				<hr>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. 
+				</p>
+				<div class="arrows">
+					
+					<img src="left.png" id="backbtn">
+					<img src="right.png" id="nextbtn">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script >
+		var slide = document.getElementById('slide');
+		var backbtn = document.getElementById('backbtn')
+
+		var slideimages = new Array(
+			"1.jpg",
+			"2.jpg",
+			"3.jpg",
+			"4.jpg",
+			"5.jpg",
+			"6.jpg",
+			)
+		let i =0;
+
+		nextbtn.onclick = function(){
+			if(i<5){
+				slide.src = slideimages[i+1];
+				i++;
+			}
+
+		}
+
+		backbtn.onclick = function(){
+			if(i>0){
+				slide.src = slideimages[i-1];
+				i--;
+			}
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
